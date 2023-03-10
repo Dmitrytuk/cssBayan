@@ -1,0 +1,14 @@
+input {
+  display: none;
+}
+.accSnippet {
+  visibility: hidden;
+}
+.accHeader:checked + label {
+    color: red;
+  }
+.accHeader:checked + label + .accSnippet {
+  visibility: visible;
+}
+
+
