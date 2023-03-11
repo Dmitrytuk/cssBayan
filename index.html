@@ -9,16 +9,27 @@
 </head>
 
 <body>
-  <div>
-    <input id="1" class="accHeader" type="checkbox" />
+  <div class="accordion">
+    <input id="1" type="radio" name="entry" class="headerInput" />
     <label for="1">
-      <div>
+      <div class="accHeader">
         <h1>Header</h1>
+        <p>+</p>
+      </div>
+      <div class="accSnippet">
+        <p>Body</p>
       </div>
     </label>
-    <div class="accSnippet">
-      <p>Body</p>
-    </div>
+    <input id="2" type="radio" name="entry" class="headerInput" />
+    <label for="2">
+      <div class="accHeader">
+        <h1>Header</h1>
+        <p>+</p>
+      </div>
+      <div class="accSnippet">
+        <p>Body</p>
+      </div>
+    </label>
   </div>
 </body>
 

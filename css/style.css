@@ -1,14 +1,45 @@
-input {
+body {
+  margin: 0;
+  padding: 0;
+}
+.accordion {
+  display: flex;
+  background-color: blue;
+  flex-direction: column;
+  width: 100%;
+}
+/* .entry { */
+/*   display: flex; */
+/*   background-color: blue; */
+/*   flex-direction: column; */
+/*   width: 100%; */
+/* } */
+.accordion input {
   display: none;
 }
+.accHeader {
+  background-color: red;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5% ;
+}
 .accSnippet {
-  visibility: hidden;
+  display: none;
+  justify-content: center;
+  padding: 5% 5%;
 }
-.accHeader:checked + label {
-    color: red;
-  }
-.accHeader:checked + label + .accSnippet {
-  visibility: visible;
+.headerInput:checked + label .accSnippet {
+  display: flex;
+  background-color: yellow;
 }
-
+.headerInput:checked + label .accSnippet:active {
+  display: none;
+}
+.headerInput:hover + label .accSnippet {
+  display: flex;
+  background-color: yellow;
+}
 
