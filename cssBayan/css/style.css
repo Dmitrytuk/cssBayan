@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.accordion {
+  display: flex;
+  /* background-color: blue; */
+  flex-direction: column;
+  width: 100%;
+}
+/* .entry { */
+/*   display: flex; */
+/*   background-color: blue; */
+/*   flex-direction: column; */
+/*   width: 100%; */
+/* } */
+.accordion input {
+  display: none;
+}
+.accHeader {
+  /* background-color: red; */
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5% ;
+}
+.accSnippet {
+  display: none;
+  justify-content: center;
+  padding: 5% 5%;
+}
+.headerInput:checked + label .accSnippet {
+  display: flex;
+  /* background-color: yellow; */
+}
+.headerInput:hover + label .accSnippet {
+  display: flex;
+  /* background-color: yellow; */
+}
+
