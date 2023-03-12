@@ -4,7 +4,7 @@ body {
 }
 .accordion {
   display: flex;
-  background-color: blue;
+  /* background-color: blue; */
   flex-direction: column;
   width: 100%;
 }
@@ -18,7 +18,7 @@ body {
   display: none;
 }
 .accHeader {
-  background-color: red;
+  /* background-color: red; */
   width: auto;
   display: flex;
   flex-direction: row;
@@ -33,13 +33,10 @@ body {
 }
 .headerInput:checked + label .accSnippet {
   display: flex;
-  background-color: yellow;
-}
-.headerInput:checked + label .accSnippet:active {
-  display: none;
+  /* background-color: yellow; */
 }
 .headerInput:hover + label .accSnippet {
   display: flex;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
